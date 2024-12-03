@@ -44,6 +44,12 @@
         }
     }
 
+    &:not(:hover) {
+        &::after {
+            animation: heart-empty 900ms forwards cubic-bezier(.65,1.01,.98,1.06);
+        }
+    }
+
     &::after {
         z-index: -1;
         opacity: 0;
